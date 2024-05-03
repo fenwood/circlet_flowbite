@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Jumbotron from "../components/Jumbotron.astro";
+import CustomImageScroll from "../components/CustomImageScroll.astro";
+import CTA from "../components/CTA.astro";
+import FeatureList from "../components/FeatureList.astro";
+
+import Timeline from "../components/Timeline.astro";
+
+import data from "../data/site.json";
+---
+
+<Layout title={data.siteName}>
+  <main>
+    <Jumbotron 
+      headline='Savor the Flavor: Circle T BBQ – Where Every Bite is a Smoky Symphony!', 
+      subtitle='Welcome to Circle T BBQ! We’re not just a catering company; we’re flavor architects, smoke whisperers, and grill virtuosos. Our passion? Crafting unforgettable feasts that leave your taste buds dancing the two-step. From sizzling hot dogs to melt-in-your-mouth brisket, we’ve got your cravings covered.', 
+      cta1='Contact us', 
+      url1='/contact', 
+      cta2='Learn more', 
+      url2='/about', 
+      image='/images/hero.jpeg' />
+    <CTA title="Now serving Zwick's Park" body='You can find us Monday to Friday from 10am to 5pm at Zwicks Park at 10 Bay Bridge Road, Belleville ON. Come down and try our famous hot dogs and sausages and enjoy a stroll on the Bay of Quinte. We will be here all summer long and we look forward to serving you 🔥🔥🔥 this year.' />
+    <h1 class="mt-4 text-6xl font-extrabold text-center">What we offer</h1>
+    <CustomImageScroll />
+    <FeatureList 
+      heading='Our Specialties' 
+      sections={['Hot Dogs','Pulled Pork','Brisket']} 
+      sectionsText={["It's hard to beat the simple joy of a great hot dog, and we make them for the hot dog connesiuers out there. We make delicious hot dogs and a variety of sausages from the best quality meat.",
+            'Our smoked pulled pork sandwiches are to die for. We smoke our pork for 8 hours using apple wood and top with our special barbeque sauce. All meat, no filler.',
+            'Our Texas-style brisket with our secret rub is a crowd favorite. We smoke this bad boy for over 10 hours in cherry wood and the meat is so tender it falls apart in your hands. ']} />
+  </main>
+</Layout>

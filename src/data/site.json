@@ -1,0 +1,116 @@
+{
+  "owner": "Circle T",
+  "siteName": "Circle T BBQ & Catering Services",
+  "siteDescription": "Savory Texas Smoked Meats, Hot Dogs, Burgers, and the fixin's to feed your crowd.  ",
+  "about": "We cater events serving barbeque and smoked meats, specializing in texas-style smoked pulled pork, brisket and hotdogs.",
+  "contact": {
+    "email": "barry@circlet.com",
+    "phone": "613-555-5555",
+    "address": "Consecon, Ontario"
+  },
+  "pages": [
+    {
+      "title": "Home",
+      "href": "/"
+    },
+    {
+      "title": "About",
+      "href": "/about"
+    },
+    {
+      "title": "Contact",
+      "href": "/contact"
+    },
+    {
+      "title": "Menu",
+      "href": "/menu"
+    },
+    {
+      "title": "Recipes",
+      "href": "/recipes"
+    }
+  ],
+  "social": [
+    {
+      "title": "Facebook",
+      "href": "https://facebook.com/"
+    },
+    {
+      "title": "Instagram",
+      "href": "https://www.instagram.com"
+    },
+    {
+      "title": "Twitter",
+      "href": "https://www.twitter.com/"
+    }
+  ],
+  "projects": [
+    {
+      "projectTitle": "Project 1",
+      "href": "project/one",
+      "about": "Database of books and reviews from users complete with auth and comments and so much more!!!",
+      "type": "Python, Django, HTML, CSS",
+      "repo": "https://github.com",
+      "image": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+    },
+    {
+      "projectTitle": "Project 2",
+      "href": "project/two",
+      "about": "Video dashboard using JavaScript that allows user to build and share a layout of videos from YouTube.",
+      "repo": "https://github.com",
+      "type": "JavaScript, HTML, CSS",
+      "image": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg",
+      "featured": true
+    },
+    {
+      "projectTitle": "Project 3",
+      "href": "project/three",
+      "about": "Some info about this project here, please add something here for this project ok here.",
+      "type": "PHP, MySQL, HTML, CSS",
+      "repo": "https://github.com",
+      "image": "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+    },
+    {
+      "projectTitle": "Project 4",
+      "href": "project/four",
+      "about": "Some info about project 4 I'm not sure haha ok see ya",
+      "type": "WordPress",
+      "repo": "https://github.com"
+    }
+  ],
+  "recipes": [
+    {
+      "projectTitle": "Smoked Jerk Chicken",
+      "href": "recipe/jerk-chicken",
+      "about": "Our favorite spicy dish!!!",
+      "type": "6 hours",
+      "repo": "https://github.com",
+      "image": "/images/recipe-jerk-chicken.jpg"
+    },
+    {
+      "projectTitle": "Pulled Pork",
+      "href": "recipe/pulled-pork",
+      "about": "Texas style pulled pork slow roasted.",
+      "repo": "https://github.com",
+      "type": "8 hours",
+      "image": "/images/recipe-pork.jpg",
+      "featured": true
+    },
+    {
+      "projectTitle": "Brisket",
+      "href": "recipe/brisket",
+      "about": "Ribs with rub.",
+      "type": "6 hours",
+      "repo": "https://github.com",
+      "image": "/images/recipe-brisket.jpg"
+    },
+    {
+      "projectTitle": "Easy Ribs",
+      "href": "recipe/ribs",
+      "about": "Some info about project 4 I'm not sure haha ok see ya",
+      "type": "8 hours",
+      "repo": "https://github.com",
+      "image": "/images/recipe-ribs.jpg"
+    }
+  ]
+}

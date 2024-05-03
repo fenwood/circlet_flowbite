@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Heading from "../components/Heading.astro";
+
+import data from "../data/site.json";
+
+import { Image } from 'astro:assets';
+import logo from "../assets/circlet.png"; 
+import hotdog from "../assets/gourmet_hotdog.jpeg"; 
+const title='Title'
+const body='body'
+---
+<Layout title='Circle T BBQ | About Us'>
+  <main>
+  <h1 class="text-black text-6xl text-center">About Circle T BBQ</h1>
+  <Heading heading='About Circle T BBQ' />
+    <section class="mb-12 bg-stone-100 dark:bg-slate-800">
+        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <Image src={logo} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Our Story
+                </h2>
+                <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">
+                    We have been serving barbeque fare at events for over 10 years at local events and festivals in the Belleville, ON area. We are a small, family operated food services business and our philosophy has always been great food at a fair price. 
+                </p>
+                <p>We're obsessed with delivering that down-home, smoked goodness that makes every gathering unforgettable. Our low-and-slow method means juicy, fall-off-the-bone brisket, tender pulled pork, and ribs that'll have your guests licking their fingers.</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="mb-12 bg-stone-100 dark:bg-slate-800">
+        <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <div class="mt-4 md:mt-0">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We're passionate about hot dogs.</h2>
+                <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">
+                    Our all-beef hot dogs are like a summer day wrapped in a bun. Topped with zesty relish, tangy mustard, and a sprinkle of nostalgia, they’re the ultimate crowd-pleaser. We source all our meats from local butchers and only use the best quality hot dogs. We also offer Polish, German and Italian sasuages.
+                </p>
+
+            </div>
+            <Image src={hotdog} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />
+
+        </div>
+    </section>
+  </main>
+</Layout>

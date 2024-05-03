@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import HeaderSmall from "../components/HeaderSmall.astro";
+import Form from "../components/Form.astro";
+const title = "Contact Us";
+const subtitle = "Have any quesitons? Need a quote? Want to chat? Fill out the contact form below and we will get in touch as soon as possible.";
+---
+
+<Layout title="Circle T BBQ | Contact Us">
+  <main>
+  <div>
+    <HeaderSmall title={title} subtitle={subtitle} />
+  </div>
+    <div class="max-w-md m-auto my-8">
+      <Form />
+    </div>
+  </main>
+</Layout>
+
+<style></style>

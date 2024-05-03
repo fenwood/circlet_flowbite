@@ -1,0 +1,30 @@
+{
+  "name": "astro-portfolio-template",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^10.2.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/montserrat": "^5.0.19",
+    "@fontsource/bree-serif": "^5.0.13",
+    "@fontsource/poppins": "^5.0.14",
+    "@fontsource/source-sans-pro": "^5.0.8",
+    "astro": "^4.3.1",
+    "flowbite": "^1.8.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.17.1"
+  }
+}

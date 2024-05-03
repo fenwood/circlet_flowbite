@@ -1,0 +1,27 @@
+---
+// import the Image component and the image
+import { Image } from 'astro:assets';
+import darkImage from "../assets/hotdogvendor.jpg"; 
+import lightImage from "../assets/hotdogvendor.jpg"; 
+
+
+const { title, body } = Astro.props
+
+interface Props {
+  title: string,
+  body: string,
+  image: string,
+}
+
+---
+<section class="mb-12 bg-stone-100 dark:bg-slate-800">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <Image src={darkImage} class="w-full hidden dark:block" alt="selling hot dogs." />
+        <Image src={lightImage} class="w-full dark:hidden border-solid border-2" alt="A description of my image." />
+        <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{title}</h2>
+            <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">{body}</p>
+
+        </div>
+    </div>
+</section>
